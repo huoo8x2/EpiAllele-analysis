@@ -14,8 +14,7 @@
 #     1. Subset the cells from the main integrated Seurat object.
 #     2. Re-run integration (e.g., Harmony) on the subsetted data to correct
 #        for batch effects specific to that lineage.
-#     3. Perform fine-grained clustering and detailed subtype annotation using
-#        known markers.
+#     3. Perform clustering and detailed subtype annotation using known markers.
 #     4. Calculate and visualize the proportions of each subtype across the
 #        different original samples.
 #     5. Analyze and visualize the similarity of subtype compositions between
@@ -33,12 +32,12 @@ for (p in c("tidyverse", "Seurat", "ggpubr", "harmony", "ComplexHeatmap", "ggall
     suppressMessages(library(p, quietly = T, character.only = T))
   }
 }
-source("~/project/EpiAllele/script/snRNAseq/snRNA_colorSet.R")
+source("/data02/hukaijie/EpiAllele/final_script/snRNAseq/snRNA_colorSet.R")
 
 
 
-data.path <- "~/project/EpiAllele/result/snRNAseq/integration/"
-result.path <- "~/project/EpiAllele/result/snRNAseq/subcluster/"
+data.path <- "/data02/hukaijie/EpiAllele/result/snRNAseq/integration/"
+result.path <- "/data02/hukaijie/EpiAllele/result/snRNAseq/subcluster/"
 if (!dir.exists(result.path)) {
   dir.create(result.path)
 }
@@ -392,7 +391,7 @@ for (celltype in extract_celltypes) {
 }
 
 # Subtype proportion statistics ----
-prop_path <- "~/project/EpiAllele/result/snRNAseq/proportion_stat/"
+prop_path <- "/data02/hukaijie/EpiAllele/result/snRNAseq/proportion_stat/"
 if (!dir.exists(prop_path)) {
   dir.create(prop_path)
 }

@@ -32,11 +32,11 @@ for (p in c("tidyverse", "Seurat", "ggpubr", "harmony", "scCustomize", "stringr"
 }
 
 
-source("~/project/EpiAllele/script/snRNAseq/snRNA_colorSet.R")
+source("/data02/hukaijie/EpiAllele/final_script/snRNAseq/snRNA_colorSet.R")
 
 # Data integration ----
-data.path <- "~/project/EpiAllele/result/snRNAseq/doubletfinder/"
-result.path <- "~/project/EpiAllele/result/snRNAseq/integration/"
+data.path <- "/data02/hukaijie/EpiAllele/result/snRNAseq/doubletfinder/"
+result.path <- "/data02/hukaijie/EpiAllele/result/snRNAseq/integration/"
 if (!dir.exists(result.path)) {
   dir.create(result.path)
 }
@@ -439,7 +439,7 @@ write.csv(AAV_stat, paste0(result.path, "AAV_stat.csv"))
 
 # Celltype proportion statistics ----
 metadata <- data.harmony@meta.data
-result.path <- "~/result/snRNAseq/proportion_stat/"
+result.path <- "/data02/hukaijie/EpiAllele/result/snRNAseq/proportion_stat/"
 if (!dir.exists(result.path)) {
   dir.create(result.path)
 }

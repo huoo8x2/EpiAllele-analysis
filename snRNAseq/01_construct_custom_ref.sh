@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
-ref_path = "~/project/EpiAllele/ref/mouse"
+ref_path = "/data02/hukaijie/EpiAllele/ref/mouse"
 cd $ref_path
-gunzip Mus_musculus.GRCm39.dna.primary_assembly.fa.gz
 
 ## filter the GTF: remove non-polyA transcripts that overlap with protein-coding gene models
 cellranger mkgtf \

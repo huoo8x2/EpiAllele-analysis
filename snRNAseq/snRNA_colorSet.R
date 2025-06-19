@@ -21,15 +21,15 @@ colorSet <- list(
     "SQ"="#FCB11C"
   ),
   Fibroblasts=c(
-    "Fibroblasts_1"="#A3DA86",
-    "Fibroblasts_2"="#017A05", 
-    "Fibroblasts_3"="#B5B766", 
-    "Fibroblasts_4"="#2C6693",
-    "Fibroblasts_5"="#D95E02",
-    "Fibroblasts_6"="#5CBF72", 
-    "Fibroblasts_7"="#A7225F", 
-    "Fibroblasts_8"="#5A3D9A", 
-    "Fibroblasts_9"="#48C9A9"
+    "Fibroblasts_1"="#A3DA86",  # 柔和的草绿色
+    "Fibroblasts_2"="#017A05",  # 深绿色，增强对比
+    "Fibroblasts_3"="#B5B766",  # 偏橄榄绿，增加层次感
+    "Fibroblasts_4"="#2C6693",  # 蓝绿色，适合作为对比色
+    "Fibroblasts_5"="#D95E02",  # 橙红色，增强对比
+    "Fibroblasts_6"="#5CBF72",  # 亮绿色，增加活力
+    "Fibroblasts_7"="#A7225F",  # 深玫红，与绿色形成强对比
+    "Fibroblasts_8"="#5A3D9A",  # 紫色，带来更多对比变化
+    "Fibroblasts_9"="#48C9A9"   # 青绿色，与整体色调和谐
   ),
   Cardiomyocytes=c(
     "Cardiomyocytes_1"="#ea5d6f",

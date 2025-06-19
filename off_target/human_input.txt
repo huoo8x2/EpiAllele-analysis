@@ -1,0 +1,3 @@
+/data02/hukaijie/EpiAllele/ref/human/chroms
+NNNNNNNNNNNNNNNNNNNNNGG 2 1
+GACACCCACCTTGCCATACTNNN 3 sg1

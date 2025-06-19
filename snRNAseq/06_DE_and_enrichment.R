@@ -35,13 +35,13 @@ for (p in c("tidyverse", "Seurat", "stringr", "ggrepel", "EnhancedVolcano",
     suppressMessages(library(p, quietly = T, character.only = T))
   }
 }
-source("~/project/EpiAllele/script/snRNAseq/06_enrichment_funtions.R")
+source("/data02/hukaijie/EpiAllele/final_script/snRNAseq/06_enrichment_funtions.R")
 
-data.path <- "~/project/EpiAllele/result/snRNAseq/integration/"
+data.path <- "/data02/hukaijie/EpiAllele/result/snRNAseq/integration/"
 
 
 # run DEG ----
-result.path <- "~/project/EpiAllele/result/snRNAseq/DE/"
+result.path <- "/data02/hukaijie/EpiAllele/result/snRNAseq/snRNAseq/DE/"
 if (!dir.exists(result.path)) {
   dir.create(result.path)
 }
@@ -116,7 +116,7 @@ for (celltype in extract_celltypes) {
 
 
 # enrichment ----
-enrich.path <- "~/project/EpiAllele/result/snRNAseq/enrichment/"
+enrich.path <- "/data02/hukaijie/EpiAllele/result/snRNAseq/enrichment/"
 if (!dir.exists(enrich.path)) {
   dir.create(enrich.path)
 }
@@ -160,8 +160,8 @@ for (celltype in extract_celltypes) {
 
 
 # expression heatmap ----
-DE.path <- "~/project/EpiAllele/result/snRNAseq/DE/"
-result.path <- "~/project/EpiAllele/result/snRNAseq/DE_heatmap/"
+DE.path <- "/data02/hukaijie/EpiAllele/result/snRNAseq/DE/"
+result.path <- "/data02/hukaijie/EpiAllele/result/snRNAseq/DE_heatmap/"
 if (!dir.exists(result.path)) {
   dir.create(result.path)
 }
