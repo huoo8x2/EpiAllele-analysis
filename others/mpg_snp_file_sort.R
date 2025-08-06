@@ -9,7 +9,6 @@ for (p in c("tidyverse", "stringr", "getopt")) {
   }
 }
 ## }}}
-#R表示A+G；Y表示C+T；M表示A+C；K表示G+T；S表示C+G；W表示A+T；H表示A+C+T；B表示C+G+T；V表示A+C+G；D表示A+G+T；N表示A+C+G+T
 
 
 spec <- matrix(c(
@@ -58,5 +57,6 @@ for (i in 1:nrow(SNP)) {
 }
 SNP <- drop_na(SNP)
 write.csv(SNP, out_file)
+
 
 
