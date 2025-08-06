@@ -94,7 +94,7 @@ p3 <- ggvenn(
 print(p3)
 dev.off()
 
-## D2: 25年D2 RNA-seq+ D2 WGBS + D2 histone cuttag ----
+## D2: D2 RNA-seq+ D2 WGBS + D2 histone cuttag ----
 D2_DEG <- read.csv("/data02/hukaijie/EpiAllele/result/20250211_mouse_RNAseq/DE/D2sg.vs.D2NT.DEresult.csv",
                     header=T)
 H3K9me3_DEG <- read.csv("/data02/hukaijie/EpiAllele/result/202407_mouse_d2_cuttag_myh6/combine_histone/DE/H3K9me3.sg.vs.NT.peak.DEresult.csv",
