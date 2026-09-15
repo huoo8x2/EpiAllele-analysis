@@ -1,2 +1,2 @@
 # EpiAllele-analysis
-The analysis scripts related to the paper "Epigenetic silencing of pathogenetic allele accompanied by normal allele elevation for treatment of hypertrophic cardiomyopathy".
+The analysis scripts related to the paper "Epi-Allele elicits compensatory expression of the non-targeted allele and prevents haploinsufficiency in dominant genetic diseases".
